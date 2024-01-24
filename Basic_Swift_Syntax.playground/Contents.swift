@@ -1,5 +1,6 @@
 import UIKit
 
+// MARK: - 23 January 2024
 
 //Line_comment
 
@@ -10,10 +11,11 @@ import UIKit
    
 */
 
-
 //  print statements
 
 print("Hello, Swift!")
+print("hello world")
+print(4 + 5)
 
 // Print a line break
 print("\n")
@@ -53,10 +55,33 @@ let myHeight = 165 //constant, immutable
 
 print("The value of myAge is \(myAge)")
 print("The value of myHeight is \(myHeight)")
-
+print("\n")
 
 // Functions
 func Person(name: String) {
     print("Hello, \(name)!")
 }
 Person(name: "Memory")
+
+
+
+// MARK: - 24 January 2024
+//Variables and Data Types
+
+//Integers
+let size : Int = 25  // Explicit type annotation
+let score = 95     // Type inference (Int)
+
+// Floating-Point Numbers
+let height: Double = 5.9  // Explicit type annotation
+let temperature = 22.5    // Type inference (Double)
+
+//Booleans
+let isFemale: Bool = true  // Explicit type annotation
+let hasCar = false          // Type inference (Bool)
+
+//Arrays
+let numbers: [Int] = [1, 2, 3]  // Explicit type annotation
+let colors = ["Red", "Green"]   // Type inference (Array of Strings)
+
+
