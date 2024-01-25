@@ -63,7 +63,7 @@ func Person(name: String) {
 }
 Person(name: "Memory")
 
-
+print("hello \(2+3) world")
 
 // MARK: - 24 January 2024
 //Variables and Data Types
