@@ -84,4 +84,4 @@ let hasCar = false          // Type inference (Bool)
 let numbers: [Int] = [1, 2, 3]  // Explicit type annotation
 let colors = ["Red", "Green"]   // Type inference (Array of Strings)
 
-
+// MARK: - 25 January 2024
