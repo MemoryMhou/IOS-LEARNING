@@ -318,3 +318,71 @@ repeat {
     diceRoll = Int.random(in: 1...6)
     print("Rolled a \(diceRoll)")
 } while diceRoll != 6
+
+
+import Foundation
+
+// Function for addition
+func add(_ a: Double, _ b: Double) -> Double {
+    return a + b
+}
+
+// Function for subtraction
+func subtract(_ a: Double, _ b: Double) -> Double {
+    return a - b
+}
+
+// Function for multiplication
+func multiply(_ a: Double, _ b: Double) -> Double {
+    return a * b
+}
+
+// Function for division
+func divide(_ a: Double, _ b: Double) -> Double? {
+    guard b != 0 else {
+        print("Error: Division by zero is undefined.")
+        return nil
+    }
+    
+    return a / b
+}
+
+// Input values
+print("Enter first number:")
+if let input1 = readLine(), let a = Double(input1) {
+    print("Enter second number:")
+    if let input2 = readLine(), let b = Double(input2) {
+        // Choose operation
+        print("Choose operation: 1 - Addition, 2 - Subtraction, 3 - Multiplication, 4 - Division")
+        if let operationInput = readLine(), let operation = Int(operationInput) {
+            var result: Double?
+            
+            // Perform selected operation
+            switch operation {
+            case 1:
+                result = add(a, b)
+            case 2:
+                result = subtract(a, b)
+            case 3:
+                result = multiply(a, b)
+            case 4:
+                result = divide(a, b)
+            default:
+                print("Invalid operation.")
+            }
+            
+            // Display result
+            if let result = result {
+                print("Result: \(result)")
+            }
+        } else {
+            print("Invalid operation input.")
+        }
+    } else {
+        print("Invalid second number input.")
+    }
+} else {
+    print("Invalid first number input.")
+}
+
+
